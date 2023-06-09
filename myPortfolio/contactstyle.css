@@ -1,18 +1,62 @@
 body {
-    background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: 160px 1fr;
+    grid-gap: 30px;
 }
+.logo {
+    width: 150px;
+    height: 130px;
+    margin: 3% 10%;
+    background-color: white;
+  }
+
+  header {
+    grid-row: 1/2;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+  }
+  nav > a {
+    margin: 2% 1% 3%;
+    height: 10%;
+    width: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white;
+  }
+
+  .has-border {
+    border-radius: 25px;
+    border: 2px solid #0795C3;
+    background: none;
+    padding: 10px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 2%;
+  }
 div {
     text-align: center;
 }
 form {
+    grid-row: 2/3;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: lightgray;
 }
 #contacthead {
     grid-row: 1/2;
     grid-column: 1/4;
-    background-color: lightseagreen;
     display: flex;
     flex-direction: column;
     justify-content: center;
