@@ -1,8 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/05/Sky-Desktop-Backgrounds-Hd-Images.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: grid;
+    grid-template-rows: 20% 1fr;
   }
   /* What kind of selector is this? */
   .logo {
@@ -13,12 +12,16 @@ body {
   }
 
   header {
+    grid-row: 1/2;
+    background-color: aqua;
     display: grid;
     grid-template-columns: 40% 60%;
     width: 100%;
   }
 
   main {
+    background-color: lightgray;
+    grid-row: 2/3;
     height: auto;
     width: 100%;
     display: grid;
@@ -30,7 +33,6 @@ body {
     margin: 2% 1% 3%;
     height: 10%;
     width: 15%;
-    color: greenyellow;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     border-radius: 25px;
@@ -63,7 +65,7 @@ body {
   }
 
   h1 {
-    color:white;
+    color: darkred;
     grid-column: 2/3;
     margin: 3% auto;
     border-bottom: 2px solid #1940A9;;
@@ -92,7 +94,7 @@ body {
     border-radius: 25px;
     background: transparent;
     padding: 20px;
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     text-align: center;
     color: teal;
     letter-spacing: 10px;
