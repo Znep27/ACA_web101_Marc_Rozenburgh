@@ -8,7 +8,6 @@ body {
     width: 150px;
     height: 130px;
     margin: 3% 10%;
-    background-color: white;
   }
 
   header {
@@ -90,6 +89,12 @@ form {
     grid-column: 1/4;
 }
 @media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    nav > a {
+        font-size: 12px;
+    }
     form {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
