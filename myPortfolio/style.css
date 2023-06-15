@@ -3,6 +3,7 @@ body {
     display: grid;
     grid-template-rows: 160px 1fr;
     grid-gap: 30px;
+    background-color: lightgray;
   }
   .logo {
     width: 150px;
@@ -12,14 +13,15 @@ body {
 
   header {
     grid-row: 1/2;
-    background-color: aqua;
+    background-image: url("/wood.jpg");
+    background-size: 150px;
     display: grid;
     grid-template-columns: 30% 70%;
     width: 100%;
   }
 
   main {
-    background-color: lightgray;
+    background-image: url("/page.jpg");
     grid-row: 2/3;
     height: auto;
     width: 100%;
@@ -44,8 +46,12 @@ body {
     border: 2px solid #0795C3;
     background: none;
     padding: 10px;
+    color: lightgray;
   }
-
+  .has-border:hover {
+    border: 2px solid blue;
+    font-weight: bold;
+}
   nav {
     display: flex;
     justify-content: flex-end;
@@ -102,5 +108,15 @@ body {
     }
     nav > a {
         font-size: 12px;
+    }
+    button {
+      letter-spacing: normal;
+      text-align: right;
+      padding-bottom: 15%;
+    }
+  }
+  @media (max-width: 576px) {
+    button {
+      font-size: 12px;
     }
   }
