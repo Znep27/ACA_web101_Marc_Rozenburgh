@@ -13,7 +13,7 @@ body {
 
   header {
     grid-row: 1/2;
-    background-image: url("/wood.jpg");
+    background-image: url("./wood.jpg");
     background-size: 150px;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -21,7 +21,7 @@ body {
   }
 
   main {
-    background-image: url("/page.jpg");
+    background-image: url("./page.jpg");
     grid-row: 2/3;
     height: auto;
     width: 100%;
